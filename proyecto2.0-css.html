@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEQUIA EN MEXICO</title>
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="icon" type="image/jpg" sizes="32x32" href="images/werwewe.png">
+	<link rel="icon" type="image/jpg" sizes="16x16" href="images/werwewe.png">
+
+    <!-- subtemas h2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200..700&family=Russo+One&display=swap" rel="stylesheet">
+
+
+<!-- temas principal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Russo+One&display=swap" rel="stylesheet">
+
+
+    <!-- La letra p -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Russo+One&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    
+    
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #fff;
+    
+
+}
+
+#video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100%;
+
+}
+
+
+header{
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 24px 25px -22px rgb(252, 250, 250);
+    z-index: 2;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;;
+    justify-content: space-between;
+
+}
+
+.logo {
+    height: 80px;
+    display: flex;
+    float: left;
+    color: #fff;
+}
+
+.logo h1 b {
+    color: #060880;
+    font-family: "Russo One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+
+.logo h1 {
+    
+font-family: "Russo One", sans-serif;
+ font-weight: 400;
+font-style: normal;
+}
+
+.menu {
+    height: 80px;
+}
+
+.menu nav {
+    height: 100%;
+}
+
+.menu nav ul {
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.menu nav ul li {
+    height: 100%;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu-selec:before {
+    content:'';
+    width: 100%;
+    height: 4px;
+    background: #920e0e;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+   
+    .menu nav ul li a {
+        color: #f8f8f8;
+        font-family: "Russo One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .menu nav ul li a:hover {
+        color: #0b00a3;
+    }
+
+   .menu .text-menu-selected {
+       color: #726fff;
+    }
+
+    .container-cover {
+
+        width: 100%;
+        height: 500px;
+        position: relative;
+        margin-top: 80px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .container-cover:before {
+        background-image: linear-gradient(rgba(161, 0, 235, 0.83), rgba(12, 0, 187, 0.932)), url(images/Qué-es-el-agua-3.jpg) ;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: rgba(115, 156, 180 0.8);
+        position: absolute;
+        top: 0;
+        left: 0;
+    
+    }
+
+    .container-info-cover {
+        max-width: 500px;
+        height: 300px;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    
+    }
+
+
+    .container-info-cover h1 {
+    color: #000;
+        font-family: "Chakra Petch", sans-serif;
+        font-weight: 700%;
+        font-style: normal;
+    }
+    
+    .container-info-cover p {
+        font-family: "Russo One", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .container-content {
+        width: 1200px;
+        margin: auto;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    article {
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: -10px 0 20px -30px black;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    }
+
+    article:before {
+    content: '';
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #0205c5;
+    display:flex;
+    }
+
+    article h1 {
+        font-family: "Russo One", sans-serif;
+       font-weight: 400;
+       font-style: normal;
+       font-size: 40px;
+    }
+     article h2 {
+        font-family: "Russo One", sans-serif;
+       font-weight: 700;
+       font-style: normal;
+       color: #000;
+    }
+
+    article p {
+        font-family: "Chakra Petch", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: #000000;
+     
+    }
+
+    article h3 {
+        font-family: "Chakra Petch", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: #000;
+     
+    }
+
+    article iframe {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    }
+ 
+ article img {
+ width: 100%;
+ margin-top: 20px;
+ background-color: rgb(0, 0, 0);
+    box-shadow: 0 24px 25px -22px rgb(252, 250, 250);
+ }
+
+ article video {
+    display: flex;
+    flex-shrink: 40%;
+    align-self: flex-start;
+ }
+
+
+   
+.container-footer {
+    width: 100%;
+    padding: 40px 0;
+    margin-top: 40px;
+    position: relative;
+}
+
+.container-footer footer {
+max-width: 1200px;
+margin: auto;
+}
+
+.container-footer footer .logo-footer {
+    text-align: center;
+}
+
+.container-footer footer .logo-footer img {
+    width: 50px;
+}
+
+.container-footer footer .redes-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-footer footer .redes-footer .icon-redes-footer {
+    font-size: 20px;
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: static;
+}
+
+    </style>
+</head>
+<body>
+
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-c22693c8-6782-4a04-968f-dc02ccfb8dcb" data-elfsight-app-lazy></div>
+
+    <video id="video-background" autoplay muted loop>
+        <source src="images/Efecto Bajo el Mar - Piscina - Agua en movimiento - FullHD - FREE.mp4" type="video/mp4">
+    </video>
+
+
+
+    <!-- HEADER-MENU -->
+
+    <header>
+        <div class="header-content">
+          
+            <div class="logo">
+               <a href="index.html"><h1>Concientización del<b> Agua</b></h1></a> 
+            </div>
+
+           <div class="menu">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="text-menu-selected">Inicio</a></li>
+                    <li class="menu-selec"><a href="https://salvemoselagua.org/">!Salvemos el agua!</a></li>
+                </ul>
+            </nav>
+           </div>
+
+        </div>
+    </header>
+
+<!-- Portada --><br><br>
+<div class="container-cover">
+<div class="container-info-cover">
+    <h1><br><br><br>Agua Concientización Cooperación contra Escasez
+    </h1>
+</div>
+</div>
+
+<br><br><br>
+<div class="container-content">
+
+    <article>
+        <img src="images/ahorrar.jpg" alt="agua" width="300" height="550">
+
+        <br>
+        <p>Abundó que la huella hídrica es un indicador de la apropiación humana de agua dulce, 
+        que ayuda a comprender la escasez y la contaminación del recurso, así como su relación con el consumo de bienes y 
+        con el comercio internacional.
+        </p>
+        <br>
+        <p>“Lo primero que ocurre cuando uno conoce la huella hídrica es asombro, al saber, por ejemplo, 
+        que para producir una taza de 125 mililitros de café, se utilizaron 140 litros de agua”.
+        <br> <br>
+        Mientras que “para un vaso de jugo de naranja, 200 litros; para un vaso de leche, 255 litros, 
+        o para un kilogramo de carne, 15 mil 400 litros de agua (cifras promedio mundial)”.
+        </p>  
+<br><br>
+        <h2>Usos del Agua</h2>
+<br>
+
+<h3>Clasificación de los usos del agua
+</h3>
+<br>
+     <p>Los volúmenes de aguas nacionales concesionados o asignados a los usuarios se inscriben en el Registro Público de 
+    Derechos de Agua (Repda), agrupándose para fines prácticos en usos consuntivos (agrícola, abastecimiento público, industria 
+autoabastecida y termoeléctricas) y no consuntivos (hidroeléctricas y conservación ecológica). Al 2018 el 60.8% del agua para uso 
+provenía de fuentes superficiales (ríos, arroyos, lagos y presas), el resto de aguas subterráneas. Del total del volumen concesionado
+ para usos agrupados consuntivos, al 2018 el 75.7% le correspondía al agrícola.
+
+</p>
+
+<br>
+<h3>Uso agrupado abastecimiento público
+</h3>
+<br>
+<p>Incluye la totalidad del agua entregada a través de redes de agua potable, tanto a usuarios domésticos como 
+a industrias y servicios conectados a dichas redes. El tipo de fuente predominante es la subterránea, con el 56.7% del volumen. 
+ el periodo del 2009 al 2018 el agua superficial asignada para este uso creció un 31.6%.
+
+
+</p>
+
+<br>
+
+<h3>Uso energía eléctrica excluyendo hidroelectricidad
+</h3>
+<br>
+<p>De acuerdo con lo reportado por la Secretaría de Energía (Sener) en el 2017 las centrales de la Comisión Federal de Electricidad 
+(CFE) consideradas en este uso, incluyendo productores independientes de energía (PIE) para el servicio público, tuvieron una capacidad 
+efectiva de 29 445 MW, que representaba el 69.2% del total nacional. La generación bruta de estas centrales en ese año fue de 227 TWh, 
+ 88.3% del total nacional
+</p>
+
+<br>
+<h3>¿Cuál es el objetivo de cuidar el agua?
+</h3>
+<br>
+<p>El agua es un derecho fundamental para la preservación de la vida en todas sus formas. Considerada como un derecho humano, 
+este valioso e indispensable recurso natural, no llega de forma segura a un gran número de personas 
+en distintos países, sobre todo a los más pobres, donde el agua potable no es accesible.
+</p>
+<br>
+<h3>¿Qué va a pasar si no cuidamos el agua?
+</h3>
+<br>
+<p>La contaminación hídrica empobrece los ecosistemas acuáticos y facilita la proliferación descontrolada de algas 
+fitoplanctónicas en los lagos —eutrofización—. Contaminación de la cadena alimentaria.
+
+</p>
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lJPbtskk-K0?si=1KYFiwC_3Axmhs1t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+
+<h3>¿Qué virtudes tiene el agua?
+</h3>
+<br>
+<p>El agua es de suma importancia para muchos procesos de nuestro cuerpo, es un componente esencial de todos los tejidos 
+para los procesos de digestión, absorción y excreción; es un medio de transporte y participa en reacciones metabólicas, 
+además de mantener la temperatura corporal, entre otros.
+</p>
+<br>
+<h3>¿Qué es la conservación del agua?
+</h3>
+<br>
+<p>El término conservación del agua se refiere a todas las actividades, prácticas y técnicas destinadas a utilizar de manera consciente y 
+sostenible el agua dulce disponible en nuestro planeta, así como a proteger y preservar las fuentes de agua dulce, como ríos, lagos, acuíferos, 
+aguas subterráneas y humedales.
+</p>
+<br>
+<h3>¿Qué medidas se pueden tomar para la conservación del agua?
+</h3>
+<br>
+<p>Uso eficiente del agua en el hogar: pequeñas prácticas cotidianas pueden ayudar a ahorrar grandes cantidades de agua. Algunas de estas son:
+</p>
+<br>
+<p>■ Cerrar los grifos mientras no se utiliza el agua durante las duchas, el lavado de dientes, etc.
+</p>
+<br>
+<p>■ Reparar fugas de agua, por pequeñas que sean, en grifos y tuberías.
+</p>
+<br>
+<p>■ Instalar dispositivos de ahorro de agua, como cabezales de ducha de alta presión y bajo flujo, inodoros con botones de control de flujo, 
+grifos con reguladores de caudal, etc.
+</p>
+<br>
+<p>■ Utilizar ciclos de ahorro en lavadoras y lavavajillas.
+</p>
+<br>
+<p>■ Riego inteligente: tanto en entornos domésticos como en contextos industriales, es posible implementar los métodos de riego 
+eficientes más adecuados en cada caso para minimizar el desperdicio de agua en jardines y cultivos. Los sensores de humedad y las estaciones 
+meteorológicas también ayudan a aplicar riegos más eficientes.
+</p>
+<br>
+<h3>¿Cuáles son los problemas relacionados con la falta de conservación del agua?
+</h3>
+<br>
+<p>Los principales problemas asociados a la poca o mala conservación del agua tienen que ver con su escasez, 
+al tiempo que aumentan la población mundial y la demanda industrial, y la contaminación de los recursos de una industria aún en expansión.
+</p>
+<br>
+<p>Cerca de un millón de personas en el mundo no tienen agua potable limpia; y alrededor del 80% de las muertes del mundo 
+tienen que ver con enfermedades relacionadas con el agua. La Organización de Naciones Unidas estima que para 2025, entre cinco y 
+ocho millones de personas del mundo no tendrán suficiente agua para cubrir sus necesidades básicas.
+</p>
+<br>
+<p>El aumento de la población mundial, con su consecuente expansión de la agricultura y la industrialización, 
+han incrementado la demanda de agua, al tiempo que ha aumentado la contaminación del recurso hídrico. A su vez, 
+las emisiones han potenciado el cambio climático que, entre otras cosas, ocasiona sequía y disminuye las reservas.
+</p>
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/r3cH7KYhgq8?si=S03AxiiLxMWxGida" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-d586104b-d241-439d-a9b1-5bf6789049e7" data-elfsight-app-lazy></div>
+
+</article>
+
+ </div>
+
+
+<div class="container-footer">
+    <footer>
+        <div class="logo-footer">
+    <img src="images/logodefinitivo.jpg" alt="imagen de control">
+        </div>
+    
+        <div class="redes-footer">
+        <a href="#"><i class="fa-brands fa-facebook icon-redes-footer"></i></a>
+         <a href="#"><i class="fa-brands fa-instagram icon-redes-footer"></i></a>
+        </div>
+    
+        <hr>
+        <h5>© Axel Leonardo Martinez Ramirez - Todos los Derechos Reservados</h5>
+    
+        
+    </footer>
+    </div>
+</body>
+</html>
